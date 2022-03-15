@@ -6,6 +6,7 @@ services:
     environment:
       POSTGRES_USER: ${DB_USER}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
       PGDATA: /data/postgres
     volumes:
        - '${DATA_PATH_HOST}:/data/postgres'
@@ -24,6 +25,4 @@ services:
       - '${PGADMIN_PORT}:80'
     restart: unless-stopped
 
-volumes:
-    postgres:
-    pgadmin:
+volumes: {}
