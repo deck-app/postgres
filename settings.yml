@@ -1,73 +1,25 @@
 #User defined
 user:
-  # php_version:
-  #   label:
-  #     PHP version
-  #   hint:
-  #     Select a PHP version from the list above
-  #   type:
-  #     select
-  #   values:
-  #     - "7.0"
-  #     - 7.1
-  #     - 7.2
-  #     - 7.3
-  #     - 7.4
-  #   target:
-  #     PHP_VERSION
-
-  # php_error_reporting:
-  #   label:
-  #     Enable PHP error reporting?
-  #   type:
-  #     checkbox
-  #   hint: Check the box to display PHP errors 
-  #   target:
-  #     DISPLAY_PHPERROR
-  # mysql_version:
-  #   label:
-  #     MySQL version
-  #   hint:
-  #     Select MySQL version
-  #   type:
-  #     select
-  #   values:
-  #     - "5.0"
-  #     - "7.0"
-  #   target:
-  #     MYSQL_VERSION
-
-  # customize_server_root_path:
-  #   label:
-  #     Server root
-  #   type:
-  #     input
-  #   values:
-  #     /var/www
-  #   hint:
-  #     Server document root
-  #   target:
-  #     SERVER_ROOT
   customize_pgadmin_default_email:
     label:
-      PG admin Email ID
+      pgAdmin email
     type:
       input
     values:
-      hello@get-deck.com
+      test@get-deck.com
     hint:
-      Enter PG admin Email ID
+      This will be your login email for pgAdmin
     target:
       PGADMIN_DEFAULT_EMAIL
   customize_pgadmin_default_password:
     label:
-      PG admin password
+      pgAdmin password
     type:
       input
     values:
       password
     hint:
-      Enter PG admin password
+      Password for pgAdmin
     target:
       PGADMIN_DEFAULT_PASSWORD
 #System defaults
