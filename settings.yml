@@ -48,7 +48,28 @@ user:
   #     Server document root
   #   target:
   #     SERVER_ROOT
-
+  customize_pgadmin_default_email:
+    label:
+      PG admin Email ID
+    type:
+      input
+    values:
+      hello@get-deck.com
+    hint:
+      Enter PG admin Email ID
+    target:
+      PGADMIN_DEFAULT_EMAIL
+  customize_pgadmin_default_password:
+    label:
+      PG admin password
+    type:
+      input
+    values:
+      password
+    hint:
+      Enter PG admin password
+    target:
+      PGADMIN_DEFAULT_PASSWORD
 #System defaults
 system:
   # show_localpath_selector:
